@@ -33,4 +33,8 @@ def index(request):
     else:
         form = NameForm()
 
+
     return render(request, 'studyform/name.html', {'form': form})
+def postresult(request):
+    # return HttpResponse(request.POST['1'])
+    return HttpResponse(request.POST['your_name'])
